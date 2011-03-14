@@ -1,6 +1,6 @@
 class Picciotto < Padrino::Application
   register SassInitializer
-  register Padrino::Mailer
+  #register Padrino::Mailer
   register Padrino::Helpers
 
   ##

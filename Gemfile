@@ -3,15 +3,28 @@ source :rubygems
 # Project requirements
 gem 'rake'
 gem 'rack-flash'
-gem 'thin' # or mongrel
 
 # Component requirements
 gem 'haml'
 
+# Development requirements
+group :development do
+  gem 'thin' # or mongrel
+end
+
 # Test requirements
-gem 'rspec', :group => "test"
-gem 'rack-test', :require => "rack/test", :group => "test"
+group :test do
+  gem 'rspec'
+  gem 'rack-test', :require => "rack/test"
+end
 
 
 # Padrino
-gem 'padrino', "0.9.23"
+#gem 'padrino', "0.9.23"
+
+#gem 'padrino-admin', "0.9.23"
+#gem 'padrino-gen', "0.9.23"
+#gem 'padrino-mailer', "0.9.23"
+gem 'padrino-cache', "0.9.23"
+gem 'padrino-core', "0.9.23"
+gem 'padrino-helpers', "0.9.23"

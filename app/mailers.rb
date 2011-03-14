@@ -33,6 +33,6 @@
 # and then all delivered mail will use these settings unless otherwise specified.
 #
 
-Picciotto.mailer :notifier do
+#Picciotto.mailer :notifier do
   # Message definitions here...
-end
+#end
