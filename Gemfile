@@ -3,13 +3,15 @@ source :rubygems
 # Project requirements
 gem 'rake'
 gem 'rack', ">= 1.0.0"
-gem 'rack-flash'
+
+#gem 'rack-flash'
 
 # Component requirements
 gem 'haml'
 
 # Development requirements
 group :development do
+  #gem 'padrino-gen', "0.9.23"
   gem 'thin' # or mongrel
 end
 
@@ -24,8 +26,7 @@ end
 #gem 'padrino', "0.9.23"
 
 #gem 'padrino-admin', "0.9.23"
-#gem 'padrino-gen', "0.9.23"
 #gem 'padrino-mailer', "0.9.23"
-gem 'padrino-cache', "0.9.23"
+#gem 'padrino-cache', "0.9.23"
 gem 'padrino-core', "0.9.23"
 gem 'padrino-helpers', "0.9.23"
