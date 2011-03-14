@@ -1,0 +1,18 @@
+!!! 5
+%html
+	%head
+		%meta{:name=>'keywords', :content => ''}/
+		%meta{:name=>'description', :content => ''}/
+		%title Yet another minimalistic framework
+		=stylesheet_link_tag 'screen', :media => 'screen, projection'
+		=stylesheet_link_tag 'print.css', :media => 'print'
+		=javascript_include_tag 'jquery', 'application'
+		/[if IE]
+			=stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+%body	
+	%header
+
+	%section
+		= yield
+	
+	%footer
