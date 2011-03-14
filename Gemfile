@@ -2,6 +2,7 @@ source :rubygems
 
 # Project requirements
 gem 'rake'
+gem 'rack', ">= 1.0.0"
 gem 'rack-flash'
 
 # Component requirements
@@ -13,7 +14,7 @@ group :development do
 end
 
 # Test requirements
-group :test do
+group :test, :development do
   gem 'rspec'
   gem 'rack-test', :require => "rack/test"
 end
