@@ -25,16 +25,16 @@ class Picciotto < Padrino::Application
 	#   end
 	#
 
-	##
-	# You can manage errors like:
-	#
-	#   error 404 do
-	#     render 'errors/404'
-	#   end
-	#
+	error 404 do
+		render 'errors/404'
+	end
 
 	# needed for heroku deployments
 	if Padrino.env == :production
 		Sass::Plugin.options[:never_update] = true
 	end
+
+	Compass.configure_sass_plugin!
+	Compass.add_project_configuration(File.join(Padrino.root, 'config', 'compass.rb'))
+	Compass.handle_configuration_change!
 end
