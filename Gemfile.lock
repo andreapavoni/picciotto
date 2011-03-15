@@ -2,6 +2,8 @@ GEM
   remote: http://rubygems.org/
   specs:
     activesupport (3.0.5)
+    compass (0.10.6)
+      haml (>= 3.0.4)
     daemons (1.1.0)
     diff-lcs (1.1.2)
     eventmachine (0.12.10)
@@ -48,6 +50,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass
   haml
   padrino-core (= 0.9.23)
   padrino-helpers (= 0.9.23)
